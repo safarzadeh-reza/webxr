@@ -39,8 +39,8 @@ function staticLoadPlaces() {
             "canno_inserimento": "2015",
             "cdata_e_ora_inserimento": "2015-08-14T22:04:28Z",
             "cidentificatore_in_openstreetmap": "1456303190",
-            "clongitudine": "13.016880",
-            "clatitudine": "43.844870"
+            "clongitudine": "51.3093381",
+            "clatitudine": "35.7436032"
         },
         {
             "ccomune": "ALTRO",
@@ -50,8 +50,8 @@ function staticLoadPlaces() {
             "canno_inserimento": "2015",
             "cdata_e_ora_inserimento": "2015-08-14T22:04:28Z",
             "cidentificatore_in_openstreetmap": "1456303190",
-            "clongitudine": "6.7526662",
-            "clatitudine": "44.9647566"
+            "clongitudine": "51.3093169",
+            "clatitudine": "35.7435791"
         }
         ,
         {
@@ -62,8 +62,8 @@ function staticLoadPlaces() {
             "canno_inserimento": "2015",
             "cdata_e_ora_inserimento": "2015-10-19T10:36:51Z",
             "cidentificatore_in_openstreetmap": "1827502401",
-            "clongitudine": "9.5614389",
-            "clatitudine": "46.3397422"
+            "clongitudine": "51.3093303",
+            "clatitudine": "35.7436091"
         }
         ,
         {

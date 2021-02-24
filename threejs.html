@@ -261,7 +261,9 @@
         // bind our gl context that was created with WebXR to threejs renderer
         gl.bindFramebuffer(gl.FRAMEBUFFER, session.renderState.baseLayer.framebuffer);
         // render the scene
+        renderer.autoClear = false;
         renderer.render(scene, camera);
+        renderer.autoClear = false;
       }
 
       checkXR();

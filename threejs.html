@@ -84,11 +84,7 @@
         reticle.matrixAutoUpdate = false;
         reticle.visible = false;
         scene.add(reticle);
-        console.log(models)
-        for (var i = 0; i < models.length; i++) {
-          //console.log(i);
-            scene.add(models[i]);
-          }
+        
       };
 
       // button to start XR experience
@@ -207,11 +203,15 @@
                 wireframe: true,
                 wireframeLinewidth: 2 } );
           var mtmp = new THREE.Mesh( geometry, material );
-          mtmp.position.set(pos.x, pos.y, pos.z);
           models.push(model);
-          scene.add(model);
           scene.add(mtmp);
-
+          mtmp.position.set(pos.x, pos.y, pos.z);
+          scene.add(model);
+          console.log(models)
+            for (var i = 0; i < models.length; i++) {
+              //console.log(i);
+                scene.add(models[i]);
+              }
           // start object animation right away
           toggleAnimation();
           // instead of placing an object we will just toggle animation state

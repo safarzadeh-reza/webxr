@@ -205,8 +205,9 @@
          var material = new THREE.MeshBasicMaterial( { color: 0x00FF00,
                 wireframe: true,
                 wireframeLinewidth: 2 } );
-                var mtmp = new THREE.Mesh( geometry, material );
-          models.push(model);
+          var mtmp = new THREE.Mesh( geometry, material );
+          mtmp.position.set(pos.x, pos.y, pos.z);
+          models.push(mtmp);
           scene.add(model);
           scene.add(mtmp);
 

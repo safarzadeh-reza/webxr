@@ -84,10 +84,11 @@
         reticle.matrixAutoUpdate = false;
         reticle.visible = false;
         scene.add(reticle);
-//         for (var i = 0; i < models.length; i++) {
-//           //console.log(i);
-//             scene.add(models[i]);
-//           }
+        console.log(models)
+        for (var i = 0; i < models.length; i++) {
+          //console.log(i);
+            scene.add(models[i]);
+          }
       };
 
       // button to start XR experience
@@ -207,7 +208,7 @@
                 wireframeLinewidth: 2 } );
           var mtmp = new THREE.Mesh( geometry, material );
           mtmp.position.set(pos.x, pos.y, pos.z);
-          models.push(mtmp);
+          models.push(model);
           scene.add(model);
           scene.add(mtmp);
 

@@ -74,8 +74,8 @@ function staticLoadPlaces() {
             "canno_inserimento": "2012",
             "cdata_e_ora_inserimento": "2012-07-21T11:16:01Z",
             "cidentificatore_in_openstreetmap": "1709324947",
-            "clongitudine": "7.9507432",
-            "clatitudine": "45.4352992999999"
+            "clongitudine": "51.412904105482426",
+            "clatitudine": "35.732592038006594"
         }
         ,
         {

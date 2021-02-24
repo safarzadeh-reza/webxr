@@ -10,7 +10,7 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.lat;
         let longitude = place.lng;
-
+        console.log(place)
        // add place icon
        const model = document.createElement('a-image');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);

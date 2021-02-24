@@ -184,20 +184,21 @@
 
       function placeObject() {
         if (reticle.visible && model) {
-          reticle.visible = false;
-          xrHitTestSource.cancel();
-          xrHitTestSource = null;
+          //reticle.visible = false;
+          //xrHitTestSource.cancel();
+          //xrHitTestSource = null;
           // we'll be placing our object right where the reticle was
           const pos = reticle.getWorldPosition();
-          scene.remove(reticle);
+          console.log(pos)
+          //scene.remove(reticle);
           model.position.set(pos.x, pos.y, pos.z);
           scene.add(model);
 
           // start object animation right away
           toggleAnimation();
           // instead of placing an object we will just toggle animation state
-          document.getElementById("overlay").removeEventListener('click', placeObject);
-          document.getElementById("overlay").addEventListener('click', toggleAnimation);
+          //document.getElementById("overlay").removeEventListener('click', placeObject);
+          //document.getElementById("overlay").addEventListener('click', toggleAnimation);
         }
       }
 

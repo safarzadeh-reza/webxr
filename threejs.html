@@ -31,6 +31,8 @@
       let action = null;
       let reticle = null;
       let lastFrame = Date.now();
+      
+      var models = new Array();
 
       const initScene = (gl, session) => {
 
@@ -192,7 +194,12 @@
           console.log(pos)
           //scene.remove(reticle);
           model.position.set(pos.x, pos.y, pos.z);
-          scene.add(model);
+          models.push(model);
+          for (var i = 0; i < models.length; i++) {
+          //console.log(i);
+            scene.add(models[i]);
+          }
+          //scene.add(model);
 
           // start object animation right away
           toggleAnimation();

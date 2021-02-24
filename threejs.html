@@ -31,6 +31,7 @@
       let action = null;
       let reticle = null;
       let lastFrame = Date.now();
+
       
       var models = new Array();
 
@@ -198,9 +199,16 @@
           console.log(pos)
           //scene.remove(reticle);
           model.position.set(pos.x, pos.y, pos.z);
+          var r = Math.random() + 0.5;
+         var geometry = new THREE.CubeGeometry( 200 * r, 200 * r, 200 * r);
+
+         var material = new THREE.MeshBasicMaterial( { color: 0x00FF00,
+                wireframe: true,
+                wireframeLinewidth: 2 } );
+                var mtmp = new THREE.Mesh( geometry, material );
           models.push(model);
-          
           scene.add(model);
+          scene.add(mtmp);
 
           // start object animation right away
           toggleAnimation();

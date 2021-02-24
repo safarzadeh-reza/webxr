@@ -200,7 +200,7 @@
           //scene.remove(reticle);
           model.position.set(pos.x, pos.y, pos.z);
           var r = Math.random() + 0.5;
-         var geometry = new THREE.CubeGeometry( 200 * r, 200 * r, 200 * r);
+         var geometry = new THREE.BoxGeometry( 200 * r, 200 * r, 200 * r);
 
          var material = new THREE.MeshBasicMaterial( { color: 0x00FF00,
                 wireframe: true,
